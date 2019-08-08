@@ -48,7 +48,9 @@
         var fullname  = _this.fullname;
 
         // Remove active class
-        $('.user').removeClass('active')
+        if($(".user").hasClass("active")) {
+            $('.user').removeClass('active');
+        }
 
         $(".c-card__subtitle").html(title);
         $(".c-card__title").html(fullname);
@@ -58,6 +60,10 @@
         var title = "My email address is";
         var email  = _this.email;
 
+        // Remove active class
+        if($(".user").hasClass("active")) {
+            $('.user').removeClass('active');
+        }
         $(".c-card__subtitle").html(title);
         $(".c-card__title").html(email);
     });
@@ -65,6 +71,12 @@
     $(".calender").hover(function() { 
         var title = "My birthday is";
         var dob  = new Date(_this.dob);
+
+        // Remove active class
+        if($(".user").hasClass("active")) {
+            $('.user').removeClass('active');
+        }
+
         $(".c-card__subtitle").html(title);
         $(".c-card__title").html(dob.getDate()+"/"+dob.getMonth()+"/"+dob.getFullYear());
     });
@@ -72,6 +84,12 @@
     $(".location").hover(function() { 
         var title = "My address is";
         var location  = _this.location;
+
+        // Remove active class
+        if($(".user").hasClass("active")) {
+            $('.user').removeClass('active');
+        }
+        
 
         $(".c-card__subtitle").html(title);
         $(".c-card__title").html(location);
@@ -81,6 +99,11 @@
         var title = "My phone number is";
         var cell  = _this.cell;
 
+        // Remove active class
+        if($(".user").hasClass("active")) {
+            $('.user').removeClass('active');
+        }
+
         $(".c-card__subtitle").html(title);
         $(".c-card__title").html(cell);
     });
@@ -88,6 +111,11 @@
     $(".locked").hover(function() { 
         var title = "My password is";
         var password  = _this.password;
+
+        // Remove active class
+        if($(".user").hasClass("active")) {
+            $('.user').removeClass('active');
+        }
 
         $(".c-card__subtitle").html(title);
         $(".c-card__title").html(password);
