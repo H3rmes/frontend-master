@@ -1,0 +1,52 @@
+ .c-card__content .header_section {
+    height: 110px;
+}
+
+header {
+    width: 100%;
+    height: 500px;
+    background: #2c2e31;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.c-card__content.user_photo.u-padding--none.u-border--none {
+    margin-top: -170px;
+    background: #ffffff;
+    border-radius: 4px;
+    border-color:black;
+}
+
+img.u-image.u-image--150.u-image--rounded.u-border {
+    padding: 5px;
+    background: #fff;
+}
+
+.custom-btm-shadow {
+    box-shadow: 0 4px 2px -2px #ccc;
+}
+
+.custom-border {
+    border:1px solid transparent;
+}
+
+.c-card__header_color {
+    background: #e9ecef30;
+}
+
+body {
+    background: #e9ecef;
+}
+
+.frame {
+    margin: 0 auto 0 auto;
+    max-width: 730px
+}
+
+@media screen and (max-width:35.938em){ 
+    .frame {
+        margin-right:20px;
+        margin-left:20px;
+    }
+}
