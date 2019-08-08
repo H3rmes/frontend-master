@@ -29,6 +29,7 @@ img.u-image.u-image--150.u-image--rounded.u-border {
 
 .custom-border {
     border:1px solid transparent;
+    margin-bottom: 200px;
 }
 
 .c-card__header_color {
@@ -50,3 +51,65 @@ body {
         margin-left:20px;
     }
 }
+
+.icon_list li {
+    cursor: pointer;
+    display: block;
+    width: 40px;
+    height: 48px;
+    float: left;
+    margin: 20px;
+    background-image: url(https://randomuser.me/img/card_icons.png);
+    background-size: 378px;
+    background-position-y: -48px;
+    -webkit-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+}
+
+.icon_list li.active_tab[data-label=name] {
+    background-position: 0 -96px;
+}
+
+.icon_list li[data-label=name]{
+    background-position: 0 -48px;
+}
+
+.icon_list li.active_tab[data-label=email] {
+    background-position: -68px -96px;
+}
+.icon_list li[data-label=email] {
+    background-position: -68px -48px;
+}
+
+.icon_list li.active_tab[data-label=birthday] {
+    background-position: -135px -96px;
+}
+
+.icon_list li[data-label=birthday] {
+    background-position: -135px -48px;
+}
+
+.icon_list li.active_tab[data-label=location] {
+    background-position: -203px -96px;
+}
+
+.icon_list li[data-label=location]{
+    background-position: -203px -48px;
+}
+
+.icon_list li.active_tab[data-label=phone] {
+    background-position: -270px -96px;
+}
+
+.icon_list li[data-label=phone]{
+    background-position: -270px -48px;
+}
+
+.icon_list li.active_tab[data-label=pass] {
+    background-position: -338px -96px;
+}
+
+.icon_list li[data-label=pass] {
+    background-position: -338px -48px;
+}
+

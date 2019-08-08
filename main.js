@@ -35,7 +35,7 @@
           _this.picture = data.results[0].picture.large;
         
           // initial conditions
-          $(".user").addClass('active');
+          $(".user_item").addClass('active_tab');
           $(".c-card__subtitle").html("Hi, My name is");
           $(".c-card__title").html(_this.fullname);
           $(".u-image").attr('src', _this.picture);
@@ -43,51 +43,132 @@
       });
 
      
-    $(".user").hover(function() { 
+    $(".user_item").hover(function() { 
         var title = "Hi, My name is";
         var fullname  = _this.fullname;
 
         // Remove active class
-        if($(".user").hasClass("active")) {
-            $('.user').removeClass('active');
+        if(!$(".user_item").hasClass("active_tab")) {
+            $('.user_item').addClass('active_tab');
+        }
+
+        if($(".email_item").hasClass("active_tab")) {
+            $('.email_item').removeClass('active_tab');
+        }
+
+        if($(".calender_item").hasClass("active_tab")) {
+            $('.calender_item').removeClass('active_tab');
+        }
+
+        if($(".location_item").hasClass("active_tab")) {
+            $('.location_item').removeClass('active_tab');
+        }
+
+        if($(".call_item").hasClass("active_tab")) {
+            $('.call_item').removeClass('active_tab');
+        }
+
+        if($(".locked_item").hasClass("active_tab")) {
+            $('.locked_item').removeClass('active_tab');
         }
 
         $(".c-card__subtitle").html(title);
         $(".c-card__title").html(fullname);
     });
 
-    $(".email").hover(function() { 
+    $(".email_item").hover(function() { 
         var title = "My email address is";
         var email  = _this.email;
 
         // Remove active class
-        if($(".user").hasClass("active")) {
-            $('.user').removeClass('active');
+        if($(".user_item").hasClass("active_tab")) {
+            $('.user_item').removeClass('active_tab');
         }
+
+        if(!$(".email_item").hasClass("active_tab")) {
+            $('.email_item').addClass('active_tab');
+        }
+
+        if($(".calender_item").hasClass("active_tab")) {
+            $('.calender_item').removeClass('active_tab');
+        }
+
+        if($(".location_item").hasClass("active_tab")) {
+            $('.location_item').removeClass('active_tab');
+        }
+
+        if($(".call_item").hasClass("active_tab")) {
+            $('.call_item').removeClass('active_tab');
+        }
+
+        if($(".locked_item").hasClass("active_tab")) {
+            $('.locked_item').removeClass('active_tab');
+        }
+
         $(".c-card__subtitle").html(title);
         $(".c-card__title").html(email);
     });
 
-    $(".calender").hover(function() { 
+    $(".calender_item").hover(function() { 
         var title = "My birthday is";
         var dob  = new Date(_this.dob);
 
         // Remove active class
-        if($(".user").hasClass("active")) {
-            $('.user').removeClass('active');
+        if($(".user_item").hasClass("active_tab")) {
+            $('.user_item').removeClass('active_tab');
+        }
+
+        if($(".email_item").hasClass("active_tab")) {
+            $('.email_item').removeClass('active_tab');
+        }
+
+        if(!$(".calender_item").hasClass("active_tab")) {
+            $('.calender_item').addClass('active_tab');
+        }
+
+        if($(".location_item").hasClass("active_tab")) {
+            $('.location_item').removeClass('active_tab');
+        }
+
+        if($(".call_item").hasClass("active_tab")) {
+            $('.call_item').removeClass('active_tab');
+        }
+
+        if($(".locked_item").hasClass("active_tab")) {
+            $('.locked_item').removeClass('active_tab');
         }
 
         $(".c-card__subtitle").html(title);
         $(".c-card__title").html(dob.getDate()+"/"+dob.getMonth()+"/"+dob.getFullYear());
     });
 
-    $(".location").hover(function() { 
+    $(".location_item").hover(function() { 
         var title = "My address is";
         var location  = _this.location;
 
         // Remove active class
-        if($(".user").hasClass("active")) {
-            $('.user').removeClass('active');
+        if($(".user_item").hasClass("active_tab")) {
+            $('.user_item').removeClass('active_tab');
+        }
+
+        if($(".email_item").hasClass("active_tab")) {
+            $('.email_item').removeClass('active_tab');
+        }
+
+        if($(".calender_item").hasClass("active_tab")) {
+            $('.calender_item').removeClass('active_tab');
+        }
+
+        if(!$(".location_item").hasClass("active_tab")) {
+            $('.location_item').addClass('active_tab');
+        }
+
+        if($(".call_item").hasClass("active_tab")) {
+            $('.call_item').removeClass('active_tab');
+        }
+
+        if($(".locked_item").hasClass("active_tab")) {
+            $('.locked_item').removeClass('active_tab');
         }
         
 
@@ -95,26 +176,66 @@
         $(".c-card__title").html(location);
     });
 
-    $(".call").hover(function() { 
+    $(".call_item").hover(function() { 
         var title = "My phone number is";
         var cell  = _this.cell;
 
         // Remove active class
-        if($(".user").hasClass("active")) {
-            $('.user').removeClass('active');
+        if($(".user_item").hasClass("active_tab")) {
+            $('.user_item').removeClass('active_tab');
+        }
+
+        if($(".email_item").hasClass("active_tab")) {
+            $('.email_item').removeClass('active_tab');
+        }
+
+        if($(".calender_item").hasClass("active_tab")) {
+            $('.calender_item').removeClass('active_tab');
+        }
+
+        if($(".location_item").hasClass("active_tab")) {
+            $('.location_item').removeClass('active_tab');
+        }
+
+        if(!$(".call_item").hasClass("active_tab")) {
+            $('.call_item').addClass('active_tab');
+        }
+
+        if($(".locked_item").hasClass("active_tab")) {
+            $('.locked_item').removeClass('active_tab');
         }
 
         $(".c-card__subtitle").html(title);
         $(".c-card__title").html(cell);
     });
 
-    $(".locked").hover(function() { 
+    $(".locked_item").hover(function() { 
         var title = "My password is";
         var password  = _this.password;
 
         // Remove active class
-        if($(".user").hasClass("active")) {
-            $('.user').removeClass('active');
+        if($(".user_item").hasClass("active_tab")) {
+            $('.user_item').removeClass('active_tab');
+        }
+
+        if($(".email_item").hasClass("active_tab")) {
+            $('.email_item').removeClass('active_tab');
+        }
+
+        if($(".calender_item").hasClass("active_tab")) {
+            $('.calender_item').removeClass('active_tab');
+        }
+
+        if($(".location_item").hasClass("active_tab")) {
+            $('.location_item').removeClass('active_tab');
+        }
+
+        if($(".call_item").hasClass("active_tab")) {
+            $('.call_item').removeClass('active_tab');
+        }
+
+        if(!$(".locked_item").hasClass("active_tab")) {
+            $('.locked_item').addClass('active_tab');
         }
 
         $(".c-card__subtitle").html(title);
